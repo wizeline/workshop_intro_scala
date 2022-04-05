@@ -54,7 +54,7 @@ Vagrant.configure("2") do |config|
       vb.gui = false
     
       # Customize the amount of memory and CPU on the VM:
-      vb.memory = 3096
+      vb.memory = 4096
       vb.cpus = 3
       # Fix for Vagrant 2.2.19 in Windows for avoiding getting stuck while connecting to the instance
       vb.customize ["modifyvm", :id, "--uart1", "0x3F8", "4"]
